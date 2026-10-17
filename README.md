@@ -36,11 +36,6 @@ git clone git@github.com:SturdyDave/git-learning.git
 ## Git basics
 
 ```bash
-# create new branch (-b) from current branch and then check out new branch
-git checkout -b name-of-branch
-```
-
-```bash
 # displays latest changes
 git status
 ```
@@ -48,6 +43,12 @@ git status
 ```bash
 # commit all (-a) your changes to the local git history with message (-m)
 git commit -a -m "made this change" 
+```
+
+```bash
+# to stage all untracked files (. is current directory).
+# you won't be able to commit new files without first staging them.
+git add .
 ```
 
 ```bash
@@ -62,6 +63,6 @@ flowchart LR
 	edit[Edit files] --> stage[Stage changes<br/>git add]
 	stage --> commit[Commit locally<br/>git commit]
 	commit --> push[Push to GitHub<br/>git push]
-	push --> pull[Pull updates<br/>git pull]
+	push --> pull[Pull updates<br/>git pull<br/>to pull team mate's changes]
 	pull --> edit
 ```
