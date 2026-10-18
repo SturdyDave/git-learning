@@ -2,12 +2,19 @@
 
 Project to learn about and practise git commands.
 
-## JavaScript playground
+## Family tree viewer
 
-Open `index.html` in a web browser to practise JavaScript. Write code in the
-editor and select **Run** (or press **Ctrl+Enter**) to see the result in the
-preview. Console messages and errors appear below the preview. The code runs
-locally in an isolated browser frame; no server or dependencies are required.
+Install Python 3 if it is not already available.
+
+Run `python server.py` and open `http://127.0.0.1:8000` to explore the Stanton
+family tree. Select a person to see their details, search for a family member,
+or use the **Add member** modal to add a son or daughter, choose their parent
+from the searchable list, and optionally record a note. People and relationships
+are stored in the local
+`kinfolk.sqlite3` SQLite database. A new, empty database is seeded with the
+sample family on first startup; an intentionally empty family is left empty.
+Stop the server with **Ctrl+C**. It listens only on your computer.
+Run the backend tests with `python -m unittest`.
 
 ## Helpful VSCode shortcuts
 
