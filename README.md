@@ -2,6 +2,13 @@
 
 Project to learn about and practise git commands.
 
+## JavaScript playground
+
+Open `index.html` in a web browser to practise JavaScript. Write code in the
+editor and select **Run** (or press **Ctrl+Enter**) to see the result in the
+preview. Console messages and errors appear below the preview. The code runs
+locally in an isolated browser frame; no server or dependencies are required.
+
 ## Helpful VSCode shortcuts
 
 - `CTRL+J`: Open/close terminal
